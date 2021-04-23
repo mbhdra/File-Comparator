@@ -1,1 +1,2 @@
-# File-Comparator
+- A C script to compare 2 binary files.
+- It simply takes file paths as command line arguments.
