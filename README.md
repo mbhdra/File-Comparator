@@ -1,2 +1,2 @@
-- A C script to compare 2 binary files.
+- A C script to compare 2 binary files byte-wise.
 - It simply takes file paths as command line arguments and prints the result on console indicating if given files are equal or not.
