@@ -35,16 +35,16 @@ int main(int argc, char *argv[])
         long filelen_1;
         long filelen_2;
 
-        fseek(fp1, 0, SEEK_END);	// Jump to the end of the file
-        filelen_1 = ftell(fp1);		// Get the current byte offset in the file
+        fseek(fp1, 0, SEEK_END);    // Jump to the end of the file
+        filelen_1 = ftell(fp1);     // Get the current byte offset in the file
         rewind(fp1);                // Jump back to the beginning of the file
 
         buffer_1 = (char *)malloc(filelen_1 * sizeof(char)); 	// Enough memory for the file
         fread(buffer_1, filelen_1, 1, fp1);                     // Read in the entire file
         fclose(fp1);
 
-        fseek(fp2, 0, SEEK_END);	// Jump to the end of the file
-        filelen_2 = ftell(fp2);		// Get the current byte offset in the file
+        fseek(fp2, 0, SEEK_END);    // Jump to the end of the file
+        filelen_2 = ftell(fp2);     // Get the current byte offset in the file
         rewind(fp2);                // Jump back to the beginning of the file
 
         buffer_2 = (char *)malloc(filelen_2 * sizeof(char));    // Enough memory for the file
