@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 
  	if (argc < 3)
 	{
-        	printf("\nInsufficient Arguments: \n");
-        	return 0;
+        printf("\nInsufficient Arguments: \n");
+        return 0;
 	}
     else
     {
