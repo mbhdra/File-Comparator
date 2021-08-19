@@ -47,8 +47,8 @@ int main(int argc, char *argv[])
         filelen_2 = ftell(fp2);		// Get the current byte offset in the file
         rewind(fp2);			    // Jump back to the beginning of the file
 
-        buffer_2 = (char *)malloc(filelen_2 * sizeof(char));	// Enough memory for the file
-        fread(buffer_2, filelen_2, 1, fp2);		                // Read in the entire file
+        buffer_2 = (char *)malloc(filelen_2 * sizeof(char));    // Enough memory for the file
+        fread(buffer_2, filelen_2, 1, fp2);                     // Read in the entire file
         fclose(fp2);
 
         if (filelen_1 != filelen_2)
