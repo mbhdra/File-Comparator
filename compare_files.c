@@ -2,15 +2,15 @@
 
 int main(int argc, char *argv[])
 {
-	FILE *fp1, *fp2;
-	int flag=0;
-	printf("COMPARE WORKING..\n");
+    FILE *fp1, *fp2;
+    int flag=0;
+    printf("COMPARE WORKING..\n");
 
- 	if (argc < 3)
-	{
+    if (argc < 3)
+    {
         printf("\nInsufficient Arguments: \n");
         return 0;
-	}
+    }
     else
     {
         fp1 = fopen(argv[1],  "rb");
